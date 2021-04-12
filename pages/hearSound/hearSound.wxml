@@ -1,0 +1,28 @@
+<view class="container" >
+  <swiper class="word-swiper" current='{{currentIndex}}'>
+    <swiper-item class="word-detail" wx:for="{{studyList}}" wx:key="studyList{{index}}" wx:for-item="items" wx:for-index='id' catchtouchmove="catchTouchMove">
+      <view class="swiper-top">
+        <view class="progress">
+          <progress percent="{{((id+1)/studyList.length)*100}}" activeColor="#46cad3" backgroundColor="#ececec" border-radius="10rpx" stroke-width="24rpx"></progress>
+        </view>
+        <view class="progress_num">
+          <text style="font-size:30rpx;font-weight:bold;color:#46cad3;">{{id+1}}</text>
+          <text style="font-size:26rpx;">/{{studyList.length}}</text>
+        </view>
+      </view>
+      <view class="kapian">
+        <view class="top">
+          <view class="sound" bindtap="playAudio" data-item="{{items}}">
+            <image src="/images/index/yinpin.png" mode="widthFix"></image>
+          </view>
+          <view class="tip" style="color:{{text_color}}" hidden="{{ok}}">{{isRight}}</view>
+        </view>
+      </view>
+      <view class="selection">
+        <view class="select" wx:for='{{definList}}' wx:key="definList{{index}}">
+        <button class="btn" bindtap="select" data-id='{{id}}' data-item="{{item}}" data-items="{{items}}">{{item}}</button>
+      </view>
+      </view>
+    </swiper-item>
+  </swiper>
+</view>

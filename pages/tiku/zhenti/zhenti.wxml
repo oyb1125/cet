@@ -1,0 +1,40 @@
+<view class="container">
+  <view class="head">
+    <text>仔细阅读</text>
+    <text>(1/100)</text>
+  </view>
+  <view class="body">
+    <view class="timu">
+      <text>题目：</text>
+      <text>
+      Most kids grow up learning they cannot draw on the walls. But it might be time to unlearn that training-this summer, a group of culture addicts, artists and community organizers are inviting New Yorkers to write all over the walls of an old house on Governor's Island.
+
+The project is called Writing On It All, and it's a participatory writing project and artistic experiment that has happened on Governor's Island every summer since 2013.
+
+"Most of the participants are people who are just walking by or are on the island for other reasons, or they just kind of happen to be there," Alexandra Chasin, artistic director of Writing On It All, tells Smithsonian, com.
+
+The 2016 season runs through June 26 and features sessions facilitated by everyone from dancers to domestic workers. Each session has a theme, and participants are given a variety of materials and prompts and asked to cover surfaces with their thoughts and art. This year, the programs range from one that turns the house into a collaborative essay to one that explores the meaning of exile.
+
+Governor's Island is a national historic landmark district long used for military purposes. Now known as "New York's shared space for art and play," the island, which lies between Manhattan and Brooklyn in Upper New York Bay, is closed to cars but open to summer tourists who flock for festivals, picnics, adventures, as well as these "legal graffiti (涂鸦）" sessions.
+
+The notes and art scribbled (涂画）on the walls are an experiment in self-expression. So far, participants have ranged in age from 2 to 85. Though Chasin says the focus of the work is on the activity of writing, rather than the text that ends up getting written, some of the work that comes out of the sessions has stuck with her.
+
+"One of the sessions that moved me the most was state violence on black women and black girls," says Chasin, explaining that in one room, people wrote down the names of those killed because of it. "People do beautiful work and leave beautiful messages."
+
+    </text>
+    </view>
+    <view class="xuanxiang">
+      <text style="width:100%;margin-left:0px">问题：</text>
+      <text>46. What does the project Writing On It All invite people to do?</text>
+      <radio-group class="radio-group" bindchange="radioChange">
+        <radio class="radio" wx:for-items="{{items}}" wx:key="name" value="{{item.name}}" disabled="{{choosed}}">
+          <text>{{item.value}}</text>
+        </radio>
+      </radio-group>
+    </view>
+    <view class="daan" wx:if="{{choosed}}">
+      <text>参考答案：</text>
+      <text>C</text>
+    </view>
+  </view>
+</view>

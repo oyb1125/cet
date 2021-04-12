@@ -1,0 +1,29 @@
+.container{
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
+  background-color: #f9f9f9
+}
+.body{
+  display: flex;
+  flex-direction: column;
+  background-color: #f9f9f9;
+  box-shadow:0rpx 4rpx 8rpx 4rpx #DDDDDD;
+  width: 80%;
+  padding: 40rpx;
+  border-radius: 10rpx;
+  margin: 10rpx auto;
+}
+.audioContainer{
+  display: flex;
+  flex-direction: row;
+  margin-top: 10rpx;
+  width: 100%;
+  height: 60rpx;
+}
+.audioImg{
+  display: flex;
+  flex-direction: row;
+  width: 100rpx;
+  height: 100rpx;
+}

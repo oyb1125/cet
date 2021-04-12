@@ -1,0 +1,70 @@
+{
+  "pages": [
+    "pages/index/index",
+    "pages/study/study",
+    "pages/review/review",
+    "pages/hearSound/hearSound",
+    "pages/index/search/search",
+    "pages/index/rili/rili",
+    "pages/rank/rank",
+    "pages/tiku/tiku",
+    "pages/tiku/zhenti_opt/zhenti_opt",
+    "pages/tiku/zhenti/zhenti",
+    "pages/tiku/tingli/tingli",
+    "pages/tiku/yuedu_opt/yuedu_opt",
+    "pages/tiku/xuancitiankong/xuancitiankong",
+    "pages/tiku/changpianyuedu/changpianyuedu",
+    "pages/tiku/zixiyuedu/zixiyuedu",
+    "pages/tiku/fanyi/fanyi",
+    "pages/tiku/xiezuo/xiezuo",
+    "pages/chafen/chafen",
+    "pages/wo/wo",
+    "pages/wo/pingfen/pingfen",
+    "pages/myCollect/myCollect",
+    "pages/myWrong/myWrong",
+    "pages/wo/help/help",
+    "pages/logs/logs",
+    "pages/admin/sendMsg/sendMsg",
+    "pages/admin/sendMsg/enroll/enroll",
+    "pages/admin/sendMsg/print/print",
+    "pages/admin/sendMsg/scoreQuery/scoreQuery"
+  ],
+  "tabBar": {
+    "color": "#afafaf",
+    "selectedColor": "#00aebb",
+    "list": [
+      {
+        "pagePath": "pages/index/index",
+        "text": "单词",
+        "iconPath": "/images/tabBar/danci.png",
+        "selectedIconPath": "/images/tabBar/dancied.png"
+      },
+      {
+        "pagePath": "pages/tiku/tiku",
+        "text": "题库",
+        "iconPath": "/images/tabBar/tiku.png",
+        "selectedIconPath": "/images/tabBar/tikued.png"
+      },
+      {
+        "pagePath": "pages/chafen/chafen",
+        "text": "查分",
+        "iconPath": "/images/tabBar/chafen.png",
+        "selectedIconPath": "/images/tabBar/chafened.png"
+      },
+      {
+        "pagePath": "pages/wo/wo",
+        "text": "我",
+        "iconPath": "/images/tabBar/wo.png",
+        "selectedIconPath": "/images/tabBar/woed.png"
+      }
+    ]
+  },
+  "window": {
+    "backgroundTextStyle": "light",
+    "navigationBarBackgroundColor": "#f9f9f9",
+    "navigationBarTitleText": "CET上分助手",
+    "navigationBarTextStyle": "black"
+  },
+  "style": "v2",
+  "sitemapLocation": "sitemap.json"
+}

@@ -1,0 +1,20 @@
+<!--pages/admin/sendMsg.wxml-->
+<view class="container">
+  <view class="group">
+    <view class="item" hover-class="item-hover" bindtap="print">
+      <image src="/images/wo/print.png"></image>
+      <text>打印准考证提醒消息推送</text>
+      <image src="/images/wo/arrow.png"></image>
+    </view>
+    <view class="item" hover-class="item-hover" bindtap="enroll">
+      <image src="/images/wo/examTime.png"></image>
+      <text>考试报名提醒消息推送</text>
+      <image src="/images/wo/arrow.png"></image>
+    </view>
+    <view class="item" hover-class="item-hover" bindtap="scoreQuery">
+      <image src="/images/wo/scoreQuery.png"></image>
+      <text>成绩查询提醒消息推送</text>
+      <image src="/images/wo/arrow.png"></image>
+    </view>
+  </view>
+</view>

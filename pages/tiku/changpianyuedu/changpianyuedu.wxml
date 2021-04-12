@@ -1,0 +1,102 @@
+<swiper class="container">
+  <swiper-item wx:for="{{list}}" wx:for-key="list{{index}}">
+    <scroll-view enable-flex scroll-y="true" class="viewcontainer" id="{{index}}" bindscroll="scroll">
+      <view class="swiper-top">
+        <view class="progress">
+          <progress percent="{{((index+1)/list.length)*100}}" activeColor="#46cad3" backgroundColor="#ececec" border-radius="10rpx" stroke-width="24rpx"></progress>
+        </view>
+        <view class="progress_num">
+          <text style="font-size:30rpx;font-weight:bold;color:#46cad3;">{{index+1}}</text>
+          <text style="font-size:26rpx;">/{{list.length}}</text>
+        </view>
+      </view>
+      <view class="body">
+        <movable-area style="width:100%;height:800%">
+          <view>
+            <text style="font-weight:bold">文章：({{list[index].date}})</text>
+            <text>
+              {{list[index].wenzhang}}
+      
+            </text>
+            <text style="font-weight:bold">题目：</text>
+            <text>
+              36：{{list[index]._36}}
+              37：{{list[index]._37}}
+              38：{{list[index]._38}}
+              39：{{list[index]._39}}
+              40：{{list[index]._40}}
+              41：{{list[index]._41}}
+              42：{{list[index]._42}}
+              43：{{list[index]._43}}
+              44：{{list[index]._44}}
+              45：{{list[index]._45}}
+            </text>
+          </view>
+          <movable-view out-of-bounds direction="vertical" class="movable-view">
+            <text style="font-weight:bold">你的答案：</text>
+            <view class="myanswers">
+              <view class="{{myanswer_class}}" wx:for-items="{{myanswer}}" items="{{item}}">
+                <text>{{item}}</text>
+              </view>
+            </view>
+            <text style="font-weight:bold">请作答第{{QNO}}题:</text>
+            <view class="xuanxiang">
+              <checkbox-group class="checkbox-group" bindchange="checkboxChange" id="{{list[index]._id}}">
+                <checkbox wx:key="name" value="A" disabled="{{choosed}}">
+                  <text>A</text>
+                </checkbox>
+                <checkbox wx:key="name" value="B" disabled="{{choosed}}">
+                  <text>B</text>
+                </checkbox>
+                <checkbox wx:key="name" value="C" disabled="{{choosed}}">
+                  <text>C</text>
+                </checkbox>
+                <checkbox wx:key="name" value="D" disabled="{{choosed}}">
+                  <text>D</text>
+                </checkbox>
+                <checkbox wx:key="name" value="E" disabled="{{choosed}}">
+                  <text>E</text>
+                </checkbox>
+                <checkbox wx:key="name" value="F" disabled="{{choosed}}">
+                  <text>F</text>
+                </checkbox>
+                <checkbox wx:key="name" value="G" disabled="{{choosed}}">
+                  <text>G</text>
+                </checkbox>
+                <checkbox wx:key="name" value="H" disabled="{{choosed}}">
+                  <text>H</text>
+                </checkbox>
+                <checkbox wx:key="name" value="I" disabled="{{choosed}}">
+                  <text>I</text>
+                </checkbox>
+                <checkbox wx:key="name" value="J" disabled="{{choosed}}">
+                  <text>J</text>
+                </checkbox>
+                <checkbox wx:key="name" value="K" disabled="{{choosed}}">
+                  <text>K</text>
+                </checkbox>
+                <checkbox wx:key="name" value="L" disabled="{{choosed}}">
+                  <text>L</text>
+                </checkbox>
+                <checkbox wx:key="name" value="M" disabled="{{choosed}}">
+                  <text>M</text>
+                </checkbox>
+                <checkbox wx:key="name" value="N" disabled="{{choosed}}">
+                  <text>N</text>
+                </checkbox>
+                <checkbox wx:key="name" value="O" disabled="{{choosed}}">
+                  <text>O</text>
+                </checkbox>
+
+              </checkbox-group>
+            </view>
+            <view class="daan" wx:if="{{choosed}}">
+              <text>参考答案：</text>
+              <text>{{list[index].answer}}</text>
+            </view>
+          </movable-view>
+        </movable-area>
+      </view>
+    </scroll-view>
+  </swiper-item>
+</swiper>

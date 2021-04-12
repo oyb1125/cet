@@ -1,0 +1,19 @@
+.container{
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
+  background-color: #f9f9f9
+}
+.item{
+  display: flex;
+  flex-direction: row;
+  background-color: #f9f9f9;
+  box-shadow:0rpx 4rpx 8rpx 4rpx #DDDDDD;
+  width: 80%;
+  padding: 40rpx;
+  border-radius: 10rpx;
+  margin: 10rpx auto;
+}
+.zhenti_opt-hover{
+  background-color: #edece8;
+}

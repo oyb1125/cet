@@ -1,0 +1,23 @@
+<!--pages/admin/sendMsg/print/print.wxml-->
+<view class="container">
+  <view class="group">
+    <view class="titleItem">
+      <text>考试公告名称：</text>
+    </view>
+    <view class="item" >
+      <input type="text"  bindinput="getTitle"></input>
+    </view>
+    <view class="titleItem">
+      <text>准考证打印时间：</text>
+    </view>
+    <view class="item">
+      <input type="text"  bindinput="getPrintTime"></input>
+    </view>
+    <view class="btn">
+      <button type="primary" bindtap="empower">获取订阅消息授权</button>
+    </view>
+    <view class="btn">
+      <button type="primary" bindtap="sendMsg2">发送订阅消息</button>
+    </view>
+  </view>
+</view>

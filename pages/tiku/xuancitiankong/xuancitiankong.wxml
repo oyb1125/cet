@@ -1,0 +1,82 @@
+<swiper class="container">
+  <swiper-item wx:for="{{list}}" wx:for-key="list{{index}}">
+    <scroll-view enable-flex scroll-y="true" class="viewcontainer" id="{{index}}" bindscroll="scroll" >
+      <view class="swiper-top">
+        <view class="progress">
+          <progress percent="{{((index+1)/list.length)*100}}" activeColor="#46cad3" backgroundColor="#ececec" border-radius="10rpx" stroke-width="24rpx"></progress>
+        </view>
+        <view class="progress_num">
+          <text style="font-size:30rpx;font-weight:bold;color:#46cad3;">{{index+1}}</text>
+          <text style="font-size:26rpx;">/{{list.length}}</text>
+        </view>
+      </view>
+      <view class="body">
+        <view class="timu">
+          <text style="font-weight:bold">题目：({{list[index].date}}) </text>
+          <text decode>{{list[index].wenzhang}}</text>
+        </view>
+        <text>你的答案：</text>
+        <view class="myanswers">
+          <view class="{{myanswer_class}}" wx:for-items="{{myanswer}}" items="{{item}}">
+            {{item}}
+          </view>
+        </view>
+        <view class="xuanxiang">
+          <checkbox-group class="checkbox-group" bindchange="checkboxChange" data-id="{{index}}" id="{{list[index]._id}}">
+            <checkbox class="checkbox" wx:key="name" value="A" disabled="{{choosed}}">
+              <text>{{list[index].A}}</text>
+            </checkbox>
+            <checkbox class="checkbox" wx:key="name" value="B" disabled="{{choosed}}">
+              <text>{{list[index].B}}</text>
+            </checkbox>
+            <checkbox class="checkbox" wx:key="name" value="C" disabled="{{choosed}}">
+              <text>{{list[index].C}}</text>
+            </checkbox>
+            <checkbox class="checkbox" wx:key="name" value="D" disabled="{{choosed}}">
+              <text>{{list[index].D}}</text>
+            </checkbox>
+            <checkbox class="checkbox" wx:key="name" value="E" disabled="{{choosed}}">
+              <text>{{list[index].E}}</text>
+            </checkbox>
+            <checkbox class="checkbox" wx:key="name" value="F" disabled="{{choosed}}">
+              <text>{{list[index].F}}</text>
+            </checkbox>
+            <checkbox class="checkbox" wx:key="name" value="G" disabled="{{choosed}}">
+              <text>{{list[index].G}}</text>
+            </checkbox>
+            <checkbox class="checkbox" wx:key="name" value="H" disabled="{{choosed}}">
+              <text>{{list[index].H}}</text>
+            </checkbox>
+            <checkbox class="checkbox" wx:key="name" value="I" disabled="{{choosed}}">
+              <text>{{list[index].I}}</text>
+            </checkbox>
+            <checkbox class="checkbox" wx:key="name" value="J" disabled="{{choosed}}">
+              <text>{{list[index].J}}</text>
+            </checkbox>
+            <checkbox class="checkbox" wx:key="name" value="K" disabled="{{choosed}}">
+              <text>{{list[index].K}}</text>
+            </checkbox>
+            <checkbox class="checkbox" wx:key="name" value="L" disabled="{{choosed}}">
+              <text>{{list[index].L}}</text>
+            </checkbox>
+            <checkbox class="checkbox" wx:key="name" value="M" disabled="{{choosed}}">
+              <text>{{list[index].M}}</text>
+            </checkbox>
+            <checkbox class="checkbox" wx:key="name" value="N" disabled="{{choosed}}">
+              <text>{{list[index].N}}</text>
+            </checkbox>
+            <checkbox class="checkbox" wx:key="name" value="O" disabled="{{choosed}}">
+              <text>{{list[index].O}}</text>
+            </checkbox>
+
+          </checkbox-group>
+        </view>
+
+        <view class="daan" wx:if="{{choosed}}">
+          <text>参考答案：</text>
+          <text>{{list[index].answer}}</text>
+        </view>
+      </view>
+    </scroll-view>
+  </swiper-item>
+</swiper>

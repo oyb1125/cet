@@ -1,0 +1,91 @@
+<!--pages/wo/help/help.wxml-->
+<view class="container">
+  <text style="font-weight:bold;margin-left:10%">常见问题</text>
+  <view class="box" bindtap="box_click" data-id="3">
+    <view class="box_top">
+      <view class="inner">
+        <text>账号相关问题</text>
+        <text style="color:#5a5a5a;font-size:22rpx">账号绑定、个人信息等</text>
+      </view>
+      <view wx:if="{{click&&id=='3'}}">
+        <image src="/images/wo/arrow_up.png"></image>
+      </view>
+      <view wx:else>
+        <image src="/images/wo/arrow_down.png"></image>
+      </view>
+    </view>
+    <view class="box_hide" wx:if="{{click&&id=='3'}}">
+      <text>
+    1、“CET上分助手”账号为用户的微信号，账号信息仅用于存储、绑定数据，未经用户允许，我们绝不会泄露用户数据。
+      </text>
+    </view>
+  </view>
+  <view class="box" bindtap="box_click" data-id="1">
+    <view class="box_top">
+      <view class="inner">
+        <text>功能相关问题</text>
+        <text style="color:#5a5a5a;font-size:22rpx">单词、打卡、题库等</text>
+      </view>
+      <view wx:if="{{click&&id=='1'}}">
+        <image src="/images/wo/arrow_up.png"></image>
+      </view>
+      <view wx:else>
+        <image src="/images/wo/arrow_down.png"></image>
+      </view>
+    </view>
+    <view class="box_hide" wx:if="{{click&&id=='1'}}">
+      <text space="ensp">
+    1、相比于市面上的大部分只拥有背单词和刷真题的软件，“CET上分助手”同时囊括了背单词和刷真题两种功能，满足了用户的不同需求。
+    2、单词部分分为四级词汇和六级词汇，用户可根据自己的需要，选择相应的词汇库，科学背词。单词页面底部有英文选义、中文选词、听音辨义和快速复习四种复习方法，用户可以根据自己的喜好选择复习方式，但如果没有进行学习将无法进行复习。
+    3、背完单词可以进行打卡，打卡记录会记录到日历上，方便用户查看。
+    4、题库也分为四级题库和六级题库，都拥有分为听力、阅读、翻译和写作板块。
+    5、排行榜分为日榜和总榜，榜上可以看都其他用户的学习信息以及自己在用户中的排行。
+    6、小程序提供了分数查询入口，方便用户及时进行分数查询。同时，在“我-准考证预存”中可以提前存入自己的准考证，避免出现用户需要时找不到准考证的情况。
+    7、用户在学习单词过程中发现较难记忆的单词，可以点击收藏，然后在“我-我的收藏”中查看；同时，“CET上分助手”设置了错词本，用户可以在错词本中查看自己的错词。
+      </text>
+    </view>
+  </view>
+  <view class="box" bindtap="box_click" data-id="2">
+    <view class="box_top">
+      <view class="inner">
+        <text>学习相关问题</text>
+        <text style="color:#5a5a5a;font-size:22rpx">学习记录、题型等</text>
+      </view>
+      <view wx:if="{{click&&id=='2'}}">
+        <image src="/images/wo/arrow_up.png"></image>
+      </view>
+      <view wx:else>
+        <image src="/images/wo/arrow_down.png"></image>
+      </view>
+    </view>
+    <view class="box_hide" wx:if="{{click&&id=='2'}}">
+      <text>
+    1、进行单词学习前，如果是初次使用此小程序，需先选择学习的词汇类型和今日单词数量方可进行学习。
+    2、初次使用，需先学习单词，生成相应数据，才能进行复习。
+    3、做题信息存储在本地缓存中，清除缓存将清除用户的做题数据。
+      </text>
+    </view>
+  </view>
+  <text style="font-weight:bold;margin-left:10%">拓展问题</text>
+  <view class="box" bindtap="box_click" data-id="4">
+    <view class="box_top">
+      <view class="inner">
+        <text>关于CET上分助手</text>
+        <text style="color:#5a5a5a;font-size:22rpx">开发目标，未来期望等</text>
+      </view>
+      <view wx:if="{{click&&id=='4'}}">
+        <image src="/images/wo/arrow_up.png"></image>
+      </view>
+      <view wx:else>
+        <image src="/images/wo/arrow_down.png"></image>
+      </view>
+    </view>
+    <view class="box_hide" wx:if="{{click&&id=='4'}}">
+      <text>
+    1、随着国际化的推进和发展，英语的作用显著凸显，大部分的本科院校均要求通过CET-4才可拿到毕业证。在如今的移动互联网时代，如何利用碎片化时间在不同场合均可实现英语的学习，以及如何针对性的准备四六级和调动同学们学习积极性显得尤为重要。
+    2、“CET上分助手”的开发初衷，就是为了帮助那些对四六级有困难的同学，为他们提供好的学习、复习平台，利用零碎时间随时随地学习。
+    3、“CET上分助手”目前还有许多不足之处，因此，我们在“我-给我们评分”提供了反馈渠道，用户可以通过这个渠道，给我们提出宝贵的意见和建议，帮助我们把这个项目做得更完善、更丰富。
+      </text>
+    </view>
+  </view>
+</view>

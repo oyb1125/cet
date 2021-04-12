@@ -1,0 +1,26 @@
+<!--pages/admin/sendMsg/scoreQuery/scoreQuery.wxml-->
+<view class="container">
+  <view class="group">
+    <view class="titleItem">
+      <text>考试类型：</text>
+    </view>
+    <view class="item" >
+      <input type="text"  bindinput="getExamType"></input>
+    </view>
+    <view class="titleItem">
+      <text>考试时间：</text>
+    </view>
+    <view class="item">
+      <input type="text"  bindinput="getExamTime"></input>
+    </view>
+    <view class="titleItem">
+      <text>发布状态：</text>
+    </view>
+    <view class="item">
+      <input type="text"  bindinput="getState"></input>
+    </view>
+    <view class="btn">
+      <button type="primary" bindtap="sendMsg3">发送订阅消息</button>
+    </view>
+  </view>
+</view>

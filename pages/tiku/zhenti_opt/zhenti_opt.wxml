@@ -1,0 +1,14 @@
+<view class="container">
+  <view class="group">
+  <view wx:if='{{type=="CET4"}}'>
+    <view class="item" wx:for='{{list4}}' hover-class="zhenti_opt-hover" bindtap="zhenti" data-id="{{index}}">
+      {{list4[index][0]}}
+    </view>
+  </view>
+  <view wx:else>
+    <view class="item" wx:for='{{list6}}' hover-class="zhenti_opt-hover" bindtap="zhenti" data-id="{{index}}">
+      {{list6[index][0]}}
+    </view>
+  </view>
+  </view>
+</view>

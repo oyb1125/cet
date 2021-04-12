@@ -1,0 +1,41 @@
+.container{
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
+  background-color: #f9f9f9
+}
+.head{
+  display: flex;
+  flex-direction: row;
+  margin-top: 5px;
+  justify-content: center;
+  align-items: center;
+  height: 30px;
+  background-color: #eeeeee;
+  border: 1px solid silver;
+  border-radius: 5px
+}
+.body{
+  display: flex;
+  flex-direction: column;
+  margin-top: 5px;
+  background-color: #eeeeee;
+  border: 1px solid silver;
+  border-radius: 5px
+}
+.xuanxiang{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.radio-group{
+  display: flex;
+  flex-direction: column;
+  width: 90%;
+}
+.radio{
+  border:1px solid silver;
+  border-radius: 5px;
+  margin: 1px 0px
+}

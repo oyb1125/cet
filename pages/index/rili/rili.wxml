@@ -1,0 +1,72 @@
+<!--pages/Calendar/Calendar.wxml-->
+<!-- 打卡日历页面 -->
+
+<view class='all'>
+  <view class="bar">
+    <!-- 上一个月 -->
+    <view class="previous" bindtap="handleCalendar" data-handle="prev">
+      <image src='/images/rili/pre.png'></image>
+    </view>
+    <!-- 显示年月 -->
+    <view class="date">{{cur_year || "--"}} 年 {{cur_month || "--"}} 月</view>
+    <!-- 下一个月 -->
+    <view class="next" bindtap="handleCalendar" data-handle="next">
+      <image src='/images/rili/next.png'></image>
+    </view>
+  </view>
+  <view class='days'>
+    <!-- 显示星期 -->
+    <view class="week">
+      <view wx:for="{{weeks_ch}}" wx:key="{{index}}" data-idx="{{index}}">{{item}}</view>
+    </view>
+    <!-- 列 -->
+    <view class="columns" wx:for="{{days.length/7}}" wx:for-index="i" wx:key="i">
+      <view wx:for="{{days}}" wx:for-index="j" wx:key="j">
+        <!-- 行 -->
+        <view class="rows" wx:if="{{j/7 == i}}">
+          <view class="rows" wx:for="{{7}}" wx:for-index="k" wx:key="k">
+            <!-- 每个月份的空的单元格 -->
+            <view class="cell" wx:if="{{days[j+k].date == null}}">
+              <text decode="{{true}}">&nbsp;&nbsp;</text>
+            </view>
+            <!-- 每个月份的有数字的单元格 -->
+            <view class='cell' wx:else>
+              <!-- 当前日期已签到 -->
+              <view wx:if="{{days[j+k].isSign == true}}" style='background-color:#00aebb' class='cell'>
+                <text>{{days[j+k].date}}</text>
+              </view>
+              <!-- 日期是否为今日 -->
+              <view wx:elif="{{days[j+k].date==today}}" style='background-color:#e5e5e5' class='cell'>
+                <text>{{days[j+k].date}}</text>
+              </view>
+              <!-- 当前日期未签到 -->
+              <view wx:else>
+                <text>{{days[j+k].date}}</text>
+              </view>
+            </view>
+          </view>
+        </view>
+      </view>
+    </view>
+  </view>
+  <!-- 坚持打卡天数 -->
+  <view class='count'>
+    <text>坚持学习的</text>
+    <view class='daynumber'>
+      <text class='day'>第</text>
+      <text class='number'>{{studyDays}}</text>
+      <text class='day'>天</text>
+    </view>    
+    <view class="count_bot">
+      <view class="bot">
+        <text>新学单词</text>
+        <text class='day'>{{newStudy}}</text>
+      </view>
+      <view class="bot">
+        <text>历史单词</text>
+        <text class='day'>{{studied}}</text>
+      </view>
+    </view>
+  </view>
+  <view class="btn" bindtap="daka">打卡</view>
+</view>

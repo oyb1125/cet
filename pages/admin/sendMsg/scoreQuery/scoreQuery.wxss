@@ -1,0 +1,31 @@
+/* pages/admin/sendMsg/scoreQuery/scoreQuery.wxss */
+.container{
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
+  background-color:#f2f2f2;
+}
+.group{
+  width: 100%;
+  margin-top: 20rpx;
+}
+.titleItem{
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  width: 95%;
+  margin: 0 2.5%;
+  height: 90rpx;
+}
+.item{
+  display: flex;
+  flex-direction: row;
+  background-color: white;
+  align-items: center;
+  width: 95%;
+  margin: 0 2.5%;
+  height: 90rpx;
+}
+.btn{
+  margin-top:20rpx
+}

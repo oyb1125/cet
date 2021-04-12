@@ -1,0 +1,58 @@
+<view class="container">
+  <view class="swiper-tab">
+    <view class="swiper-tab-list {{currentTab==0 ? 'on' : ''}}" data-current="0" bindtap="swichNav">四级</view>
+    <view class="swiper-tab-list {{currentTab==1 ? 'on' : ''}}" data-current="1" bindtap="swichNav">六级</view>
+  </view>
+
+  <swiper current="{{currentTab}}" class="swiper-box" duration="300" bindchange="bindChange">
+    <swiper-item class="CET4">
+      <image src="/images/rank_bg.png" style="height:25rpx;width:10rpx;border-radius:10rpx"></image>
+      <text style="font-weight:bold" space="ensp"> 真题卷</text>
+      <view class="zhenti" hover-class="zhenti-hover" bindtap="zhenti4">
+        <image src="/images/tiku/zhenti4.png"></image>
+      </view>
+      <image src="/images/rank_bg.png" style="height:25rpx;width:10rpx;border-radius:10rpx"></image>
+      <text style="font-weight:bold" space="ensp"> 专项训练</text>
+      <view class="fenlei">
+        <view class="option" hover-class="tiku-hover" bindtap="tingli4">
+          <image src="/images/tiku/listening.png"></image>
+        </view>
+        <view class="option" hover-class="tiku-hover" bindtap="yuedu4">
+          <image src="/images/tiku/reading.png"></image>
+        </view>
+      </view>
+      <view class="fenlei">
+        <view class="option" hover-class="tiku-hover" bindtap="fanyi4">
+          <image src="/images/tiku/translate.png"></image>
+        </view>
+        <view class="option" hover-class="tiku-hover" bindtap="xiezuo4">
+          <image src="/images/tiku/writing.png"></image>
+        </view>
+      </view>
+    </swiper-item>
+    <swiper-item class="CET6">
+      <image src="/images/rank_bg.png" style="height:25rpx;width:10rpx;border-radius:10rpx"></image>
+      <text style="font-weight:bold" space="ensp"> 真题卷</text>
+      <view class="zhenti" hover-class="zhenti-hover" bindtap="zhenti6">
+        <image src="/images/tiku/zhenti6.png"></image>
+      </view>
+      <image src="/images/rank_bg.png" style="height:25rpx;width:10rpx;border-radius:10rpx"></image>
+      <text style="font-weight:bold" space="ensp"> 专项训练</text>
+      <view class="fenlei">
+        <view class="option" hover-class="tiku-hover" bindtap="tingli6">
+          <image src="/images/tiku/listening.png"></image>
+        </view>
+        <view class="option" hover-class="tiku-hover" bindtap="yuedu6">
+          <image src="/images/tiku/reading.png"></image>
+        </view>
+        <view class="option" hover-class="tiku-hover" bindtap="fanyi6">
+          <image src="/images/tiku/translate.png"></image>
+        </view>
+        <view class="option" hover-class="tiku-hover" bindtap="xiezuo6">
+          <image src="/images/tiku/writing.png"></image>
+        </view>
+      </view>
+    </swiper-item>
+  </swiper>
+
+</view>

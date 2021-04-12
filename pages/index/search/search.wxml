@@ -1,0 +1,30 @@
+<view class="container">
+  <view class="search_row">
+    <view bindtap="cancel" style="justify-content:center">取消</view>
+    <input value="{{value}}" confirm-type="search" placeholder="    请输入您要查询的单词" bindinput="getText" bindconfirm="toSearch" bindfocus="historyList" focus="true"></input>
+    <icon type="search" size="30" color="#000000" bindtap="toSearch"></icon>
+  </view>
+  <!-- 推荐搜索 -->
+  <view class="history" hidden='{{!hidden}}'>
+    <view class="historyTitle">{{historyList == '' ? '' : '历史搜索'}}</view>
+    <block wx:if="{{historyList !== ''}}" wx:key="{{historyList}}" wx:for="{{historyList}}">
+      <view class="historyList" data-key="{{item}}" bindtap="historySearch">{{item}}</view>
+    </block>
+  </view>
+  <!-- 搜索结果展示 -->
+  <view class="content" hidden="{{hidden}}">
+    <block wx:if="{{request == 'SUCCESS'}}">
+      <view class="text-view">{{text}}</view>
+      <view class="word-content" bindtap='playAudio'>
+        <image src="/images/index/yinpin.png" class="sound" mode="widthFix" />
+        <view class="word-pct"> /{{content.basic.phonetic}}/ </view>
+      </view>
+      <view wx:for="{{explainArray}}">
+        <text>{{item}}</text>
+      </view>
+    </block>
+    <block wx:else>
+      <view class="noContent">没有查到释义哦</view>
+    </block>
+  </view>
+</view>

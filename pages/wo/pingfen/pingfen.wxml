@@ -1,0 +1,16 @@
+<!--pages/wo/pingfen/pingfen.wxml-->
+<view class="container">
+  <view class="kapian">
+    <view class="stars">
+      <view class="star" wx:for='{{listed}}'>
+        <image src="{{item}}" bindtap="sle_star" data-id="{{index}}"></image>
+      </view>
+    </view>
+    <view class="text">
+      <textarea placeholder="请输入您的评价内容" bindinput="getInput"></textarea>
+    </view>
+  </view>
+  <view class="tijiao" bindtap="pingfen" hover-class="tijiao-hover">
+    <image src="/images/wo/tijiao.png"></image>
+  </view>
+</view>

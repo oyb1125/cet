@@ -1,0 +1,233 @@
+<view class="container">
+  <view class="body">
+    <view class="timu">
+      <view class='audioContainer'>
+        <!--当前为播放状态  -->
+        <view class='audioImg'  wx:if="{{isplay==true&&id=='2019年12月'+type+'第一套'}}" bindtap='stop'>
+          <image style="width:50rpx;height:50rpx;" src='/images/stop.png' />
+        </view>
+        <view class='audioImg'  wx:if="{{isplay==true&&id=='2019年12月'+type+'第一套'}}" bindtap='pause'>
+            <view wx:if="{{ispause}}">
+              <image style="width:50rpx;height:50rpx;" src='/images/play.png' />
+            </view>
+            <view wx:else="{{ispause}}">
+              <image style="width:50rpx;height:50rpx;" src='/images/pause.png' />
+            </view>
+        </view>
+        <!--当前为停止状态  -->
+        <view class='audioImg' wx:else bindtap='play' data-id="2019年12月{{type}}第一套">
+          <image style="width:50rpx;height:50rpx;" src='/images/play.png' />
+        </view>
+        <text>2019年12月{{type}}第一套</text>
+      </view>
+    </view>
+  </view>
+  <view class="body">
+    <view class="timu">
+      <view class='audioContainer'>
+        <!--当前为播放状态  -->
+        <view class='audioImg'  wx:if="{{isplay==true&&id=='2019年12月'+type+'第二套'}}" bindtap='stop'>
+          <image style="width:50rpx;height:50rpx;" src='/images/stop.png' />
+        </view>
+        <view class='audioImg'  wx:if="{{isplay==true&&id=='2019年12月'+type+'第二套'}}" bindtap='pause'>
+            <view wx:if="{{ispause}}">
+              <image style="width:50rpx;height:50rpx;" src='/images/play.png' />
+            </view>
+            <view wx:else="{{ispause}}">
+              <image style="width:50rpx;height:50rpx;" src='/images/pause.png' />
+            </view>
+        </view>
+        <!--当前为停止状态  -->
+        <view class='audioImg' wx:else bindtap='play' data-id="2019年12月{{type}}第二套">
+          <image style="width:50rpx;height:50rpx;" src='/images/play.png' />
+        </view>
+        <text>2019年12月{{type}}第二套</text>
+      </view>
+    </view>
+  </view>
+  <view class="body">
+    <view class="timu">
+      <view class='audioContainer'>
+        <!--当前为播放状态  -->
+        <view class='audioImg'  wx:if="{{isplay==true&&id=='2018年12月'+type+'第一套'}}" bindtap='stop'>
+          <image style="width:50rpx;height:50rpx;" src='/images/stop.png' />
+        </view>
+        <view class='audioImg'  wx:if="{{isplay==true&&id=='2018年12月'+type+'第一套'}}" bindtap='pause'>
+            <view wx:if="{{ispause}}">
+              <image style="width:50rpx;height:50rpx;" src='/images/play.png' />
+            </view>
+            <view wx:else="{{ispause}}">
+              <image style="width:50rpx;height:50rpx;" src='/images/pause.png' />
+            </view>
+        </view>
+        <!--当前为停止状态  -->
+        <view class='audioImg' wx:else bindtap='play' data-id="2018年12月{{type}}第一套">
+          <image style="width:50rpx;height:50rpx;" src='/images/play.png' />
+        </view>
+        <text>2018年12月{{type}}第一套</text>
+      </view>
+    </view>
+  </view>
+  <view class="body">
+    <view class="timu">
+      <view class='audioContainer'>
+        <!--当前为播放状态  -->
+        <view class='audioImg'  wx:if="{{isplay==true&&id=='2018年12月'+type+'第二套'}}" bindtap='stop'>
+          <image style="width:50rpx;height:50rpx;" src='/images/stop.png' />
+        </view>
+        <view class='audioImg'  wx:if="{{isplay==true&&id=='2018年12月'+type+'第二套'}}" bindtap='pause'>
+            <view wx:if="{{ispause}}">
+              <image style="width:50rpx;height:50rpx;" src='/images/play.png' />
+            </view>
+            <view wx:else="{{ispause}}">
+              <image style="width:50rpx;height:50rpx;" src='/images/pause.png' />
+            </view>
+        </view>
+        <!--当前为停止状态  -->
+        <view class='audioImg' wx:else bindtap='play' data-id="2018年12月{{type}}第二套">
+          <image style="width:50rpx;height:50rpx;" src='/images/play.png' />
+        </view>
+        <text>2018年12月{{type}}第二套</text>
+      </view>
+    </view>
+  </view>
+  <view class="body">
+    <view class="timu">
+      <view class='audioContainer'>
+        <!--当前为播放状态  -->
+        <view class='audioImg'  wx:if="{{isplay==true&&id=='2018年6月'+type+'第一套'}}" bindtap='stop'>
+          <image style="width:50rpx;height:50rpx;" src='/images/stop.png' />
+        </view>
+        <view class='audioImg'  wx:if="{{isplay==true&&id=='2018年6月'+type+'第一套'}}" bindtap='pause'>
+            <view wx:if="{{ispause}}">
+              <image style="width:50rpx;height:50rpx;" src='/images/play.png' />
+            </view>
+            <view wx:else="{{ispause}}">
+              <image style="width:50rpx;height:50rpx;" src='/images/pause.png' />
+            </view>
+        </view>
+        <!--当前为停止状态  -->
+        <view class='audioImg' wx:else bindtap='play' data-id="2018年16月{{type}}第一套">
+          <image style="width:50rpx;height:50rpx;" src='/images/play.png' />
+        </view>
+        <text>2018年6月{{type}}第一套</text>
+      </view>
+    </view>
+  </view>
+  <view class="body">
+    <view class="timu">
+      <view class='audioContainer'>
+        <!--当前为播放状态  -->
+        <view class='audioImg'  wx:if="{{isplay==true&&id=='2018年6月'+type+'第二套'}}" bindtap='stop'>
+          <image style="width:50rpx;height:50rpx;" src='/images/stop.png' />
+        </view>
+        <view class='audioImg'  wx:if="{{isplay==true&&id=='2018年6月'+type+'第二套'}}" bindtap='pause'>
+            <view wx:if="{{ispause}}">
+              <image style="width:50rpx;height:50rpx;" src='/images/play.png' />
+            </view>
+            <view wx:else="{{ispause}}">
+              <image style="width:50rpx;height:50rpx;" src='/images/pause.png' />
+            </view>
+        </view>
+        <!--当前为停止状态  -->
+        <view class='audioImg' wx:else bindtap='play' data-id="2018年6月{{type}}第二套">
+          <image style="width:50rpx;height:50rpx;" src='/images/play.png' />
+        </view>
+        <text>2018年6月{{type}}第二套</text>
+      </view>
+    </view>
+  </view>
+  <view class="body">
+    <view class="timu">
+      <view class='audioContainer'>
+        <!--当前为播放状态  -->
+        <view class='audioImg'  wx:if="{{isplay==true&&id=='2017年12月'+type+'第一套'}}" bindtap='stop'>
+          <image style="width:50rpx;height:50rpx;" src='/images/stop.png' />
+        </view>
+        <view class='audioImg'  wx:if="{{isplay==true&&id=='2017年12月'+type+'第一套'}}" bindtap='pause'>
+            <view wx:if="{{ispause}}">
+              <image style="width:50rpx;height:50rpx;" src='/images/play.png' />
+            </view>
+            <view wx:else="{{ispause}}">
+              <image style="width:50rpx;height:50rpx;" src='/images/pause.png' />
+            </view>
+        </view>
+        <!--当前为停止状态  -->
+        <view class='audioImg' wx:else bindtap='play' data-id="2017年12月{{type}}第一套">
+          <image style="width:50rpx;height:50rpx;" src='/images/play.png' />
+        </view>
+        <text>2017年12月{{type}}第一套</text>
+      </view>
+    </view>
+  </view>
+  <view class="body">
+    <view class="timu">
+      <view class='audioContainer'>
+        <!--当前为播放状态  -->
+        <view class='audioImg'  wx:if="{{isplay==true&&id=='2017年12月'+type+'第二套'}}" bindtap='stop'>
+          <image style="width:50rpx;height:50rpx;" src='/images/stop.png' />
+        </view>
+        <view class='audioImg'  wx:if="{{isplay==true&&id=='2017年12月'+type+'第一套'}}" bindtap='pause'>
+            <view wx:if="{{ispause}}">
+              <image style="width:50rpx;height:50rpx;" src='/images/play.png' />
+            </view>
+            <view wx:else="{{ispause}}">
+              <image style="width:50rpx;height:50rpx;" src='/images/pause.png' />
+            </view>
+        </view>
+        <!--当前为停止状态  -->
+        <view class='audioImg' wx:else bindtap='play' data-id="2017年12月{{type}}第二套">
+          <image style="width:50rpx;height:50rpx;" src='/images/play.png' />
+        </view>
+        <text>2017年12月{{type}}第二套</text>
+      </view>
+    </view>
+  </view>
+  <view class="body">
+    <view class="timu">
+      <view class='audioContainer'>
+        <!--当前为播放状态  -->
+        <view class='audioImg'  wx:if="{{isplay==true&&id=='2017年6月'+type+'第一套'}}" bindtap='stop'>
+          <image style="width:50rpx;height:50rpx;" src='/images/stop.png' />
+        </view>
+        <view class='audioImg'  wx:if="{{isplay==true&&id=='2017年6月'+type+'第一套'}}" bindtap='pause'>
+            <view wx:if="{{ispause}}">
+              <image style="width:50rpx;height:50rpx;" src='/images/play.png' />
+            </view>
+            <view wx:else="{{ispause}}">
+              <image style="width:50rpx;height:50rpx;" src='/images/pause.png' />
+            </view>
+        </view>
+        <!--当前为停止状态  -->
+        <view class='audioImg' wx:else bindtap='play' data-id="2017年6月{{type}}第一套">
+          <image style="width:50rpx;height:50rpx;" src='/images/play.png' />
+        </view>
+        <text>2017年6月{{type}}第一套</text>
+      </view>
+    </view>
+  </view>
+  <view class="body">
+    <view class="timu">
+      <view class='audioContainer'>
+        <!--当前为播放状态  -->
+        <view class='audioImg'  wx:if="{{isplay==true&&id=='2017年6月'+type+'第二套'}}" bindtap='stop'>
+          <image style="width:50rpx;height:50rpx;" src='/images/stop.png' />
+        </view>
+        <view class='audioImg'  wx:if="{{isplay==true&&id=='2017年6月'+type+'第二套'}}" bindtap='pause'>
+            <view wx:if="{{ispause}}">
+              <image style="width:50rpx;height:50rpx;" src='/images/play.png' />
+            </view>
+            <view wx:else="{{ispause}}">
+              <image style="width:50rpx;height:50rpx;" src='/images/pause.png' />
+            </view>
+        </view>
+        <!--当前为停止状态  -->
+        <view class='audioImg' wx:else bindtap='play' data-id="2017年6月{{type}}第二套">
+          <image style="width:50rpx;height:50rpx;" src='/images/play.png' />
+        </view>
+        <text>2017年6月{{type}}第二套</text>
+      </view>
+    </view>
+  </view>
+
+</view>

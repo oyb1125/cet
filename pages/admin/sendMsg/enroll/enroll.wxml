@@ -1,0 +1,32 @@
+<!--pages/admin/sendMsg/enroll/enroll.wxml-->
+<view class="container">
+  <view class="group">
+    <view class="titleItem">
+      <text>考试公告名称：</text>
+    </view>
+    <view class="item" >
+      <input type="text"  bindinput="getTitle"></input>
+    </view>
+    <view class="titleItem">
+      <text>考试报名时间：</text>
+    </view>
+    <view class="item">
+      <input type="text"  bindinput="getApplyTime"></input>
+    </view>
+    <view class="titleItem">
+      <text>考试科目：</text>
+    </view>
+    <view class="item">
+      <input type="text"  bindinput="getSubject"></input>
+    </view>
+    <view class="titleItem">
+      <text>考试日期：</text>
+    </view>
+    <view class="item">
+      <input type="text"  bindinput="getExamTime"></input>
+    </view>
+    <view class="btn">
+      <button type="primary" bindtap="sendMsg">发送订阅消息</button>
+    </view>
+  </view>
+</view>

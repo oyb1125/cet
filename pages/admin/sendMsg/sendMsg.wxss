@@ -1,0 +1,33 @@
+/* pages/admin/sendMsg.wxss */
+.container{
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
+  background-color:#f2f2f2;
+}
+.group{
+  background-color: white;
+  width: 100%;
+  margin-top: 20rpx;
+}
+
+.item{
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  width: 95%;
+  margin: 0 2.5%;
+  height: 90rpx;
+}
+.item-hover{
+  background-color: #f2f2f2
+}
+.item text{
+  font-size: 35rpx;
+  flex-grow: 1;
+  margin-left: 35rpx;
+}
+image{
+  width: 80rpx;
+  height: 80rpx;
+}

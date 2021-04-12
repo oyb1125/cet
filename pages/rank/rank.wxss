@@ -1,0 +1,122 @@
+.contianer{
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
+  background: #f9f9f9
+}
+.swiper-tab{
+  height: 10%;
+  width: 100%;
+  text-align: center;
+  margin-top: 20rpx;
+  line-height: 90rpx;
+}
+.totalrank{
+  overflow: auto;
+  -webkit-overflow-scrolling: touch;
+}
+.dayrank{
+  overflow: auto;
+  -webkit-overflow-scrolling: touch;
+}
+.swiper-tab-list{  
+  font-size: 40rpx;
+  display: inline-block;
+  width: 50%;
+  color: #8a8a8a;
+  border-radius: 20rpx
+}
+.on{ 
+  color: #ffffff;
+  background-color: #00aebb;
+  border-radius: 10rpx
+}
+.swiper-box{ 
+  display: flex;
+  flex-direction: column; 
+  height: 90%; 
+  width: 100%; 
+  overflow: hidden;
+}
+.item-top{
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+  height: 350rpx;
+  margin-top: 130rpx;
+  justify-content: space-around;
+  background: #eeeeee;
+  overflow: hidden;
+}
+.no2{
+  display: flex;
+  flex-direction: column;
+  background: #00aebb;
+  margin-top: 80rpx;
+  height: 400rpx;
+  border-radius: 20rpx;
+  text-align: center;
+  align-items: center;
+  width: 200rpx
+}
+.no1{
+  display: flex;
+  flex-direction: column;
+  background: #00aebb;
+  margin-top: 40rpx;
+  height: 400rpx;
+  border-radius: 20rpx;
+  text-align: center;
+  align-items: center;
+  width: 200rpx
+}
+.no3{
+  display: flex;
+  flex-direction: column;
+  background: #00aebb;
+  margin-top: 120rpx;
+  height: 400rpx;
+  border-radius: 20rpx;
+  text-align: center;
+  align-items: center;
+  width: 200rpx
+}
+.kapian{
+  display: flex;
+  flex-direction: row;
+  padding-left:40rpx;
+  padding-right:40rpx;
+  height: 120rpx;
+  width: 80%;
+  margin: 20rpx auto;
+  align-items: center;
+  justify-content: space-between;
+  box-shadow:0rpx 4rpx 8rpx 4rpx #DDDDDD;
+  border-radius: 10rpx
+}
+.kapian_left{
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  width: 20%
+}
+.kapian_bot{
+  display: flex;
+  flex-direction: row;
+  padding-left:40rpx;
+  padding-right:40rpx;
+  margin-bottom: 0;
+  height: 12%;
+  width: 90%;
+  position: fixed;
+  align-items: center;
+  justify-content: space-between;
+  box-shadow:0rpx 4rpx 8rpx 4rpx #DDDDDD;
+  background: #ffffff
+}
+image{
+  width: 80rpx;
+  height: 80rpx;
+  border-radius: 100%
+}

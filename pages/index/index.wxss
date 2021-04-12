@@ -1,0 +1,181 @@
+navigator{
+  width: 90%;
+  height: 60rpx;
+  display: flex;
+  margin-top: 10rpx;
+  justify-content: center;
+  align-items: center;
+  border-radius: 20rpx;
+  background: #ececec;
+}
+.container{
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  height: 100vh;
+  align-items: center;
+  background-color: #f9f9f9
+}
+.search{
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+  justify-content: center;
+  align-items: center
+}
+image{
+  height: 100%;
+  width: 100%
+}
+.renwu{
+  display: flex;
+  flex-direction: column;
+  width: 90%;
+  height: 600rpx;
+  border-radius: 10rpx;
+  margin-top: 40rpx;
+  background-color: #ffffff;
+  box-shadow:0rpx 4rpx 8rpx 4rpx #DDDDDD;
+}
+picker{
+  width: 20%;
+}
+.tiaozhengjihua{
+  display: flex;
+  flex-direction: column;
+  height: 50rpx;
+  width: 138rpx;
+  margin-top: 60rpx;
+  justify-content: center;
+  align-items: center;
+  border-radius:10rpx;
+}
+.jihua{
+  display: flex;
+  flex-direction: row;
+}
+.jinridanci{
+  display: flex;
+  flex-direction: column;
+  width: 40%;
+  height: 320rpx;
+  justify-content: center;
+  align-items: center
+}
+.jihua_left{
+  display: flex;
+  flex-direction: column;
+  width: 30%;
+  height: 320rpx;
+  justify-content: center;
+  align-items: center
+}
+.jihua_left image{
+  margin-top: 20rpx;
+  width: 60rpx;
+  height: 60rpx
+}
+.tiaozhengjihua-hover{
+  background-color: #ececec
+}
+.jihua_right{
+  display: flex;
+  flex-direction: column;
+  height: 320rpx;
+  width: 30%;
+}
+.shengyutianshu{
+  display: flex;
+  flex-direction: column;
+  margin-top: 100rpx
+}
+.renwu_bot{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 100%
+}
+.jindu{
+  display: flex;
+  flex-direction: column;
+  width: 85%;
+  height: 100rpx;
+}
+.star{
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 160rpx;
+}
+/* .star_btn{
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  width: 220rpx;
+  height: 60rpx;
+} */
+.fenlei{
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  width: 90%;
+  margin-top: 20rpx;
+}
+.option{
+  display: flex;
+  flex-direction: row;
+  width: 160rpx;
+  height: 226rpx;
+  margin: 10rpx auto;
+  border-radius: 10rpx
+}
+.option-hover{
+  background: #ececec
+}
+.star_btn-hover{
+  background: #ececec
+}
+.star_btn{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    text-decoration: none;
+    position: absolute;
+    transform: translate(-50%,-50%);
+    left: 50%;
+    font-size: 50rpx;
+    margin-top: 50rpx;
+    background: linear-gradient(90deg,#03a9f4,#454ec8,#454ec8,#03a9f4);
+    background-size: 400%;
+    width: 440rpx;
+    height: 120rpx;
+    color: #fff;
+    text-transform: uppercase;
+    border-radius: 100rpx;
+    z-index: 1;
+	  animation: shine 8s infinite;
+}
+.star_btn::before{
+    content: "";
+    position: absolute;
+    /* left: -1rpx;
+    right:-1rpx;
+    top: -1rpx;
+    bottom: -1rpx; */
+    background: linear-gradient(90deg,#03a9f4,#454ec8,#734ec7,#03a9f4);
+    background-size: 400%;
+    border-radius: 100rpx;
+    filter: blur(40rpx); 
+    z-index: -1;
+	animation: shine 8s infinite;
+}
+@keyframes shine{
+    100%{
+        background-position: -400% 0;
+    }
+}

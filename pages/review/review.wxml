@@ -1,0 +1,49 @@
+<view class="container">
+  <swiper class="word-swiper" current='{{currentIndex}}'>
+    <swiper-item class="word-detail" wx:for="{{studyList}}" wx:key="{{index}}" wx:for-index='id' catchtouchmove="catchTouchMove">
+      <view class="swiper-top">
+        <view class="progress">
+          <progress percent="{{((id+1)/studyList.length)*100}}" activeColor="#46cad3" backgroundColor="#ececec" border-radius="10rpx" stroke-width="24rpx"></progress>
+        </view>
+        <view class="progress_num">
+          <text style="font-size:30rpx;font-weight:bold;color:#46cad3;">{{id+1}}</text>
+          <text style="font-size:26rpx;">/{{studyList.length}}</text>
+        </view>
+      </view>
+      <view class="kapian">
+        <view class="top">
+          <view class="word">
+            <text>{{item.word}}</text>
+          </view>
+          <view class="sound" bindtap="playAudio" data-item="{{item}}">
+            <image src="/images/index/yinpin.png" mode="widthFix"></image>
+            <text>/{{item.pronunciation}}/</text>
+          </view>
+          <view class="explain">
+            <block wx:if="{{remember}}">
+              <view class="show">
+                <text>{{item.definition}}</text>
+              </view>
+            </block>
+            <block wx:else>
+              <view class="hide"></view>
+            </block>
+          </view>
+        </view>
+      </view>
+      <view class="select">
+        <view class="remember">
+          <view class="forget-btn" hover-class="s-hover" bindtap="forget">
+            <text>不记得</text>
+          </view>
+          <view class="remember-btn" hover-class="s-hover" bindtap="remember" data-id='{{id}}'>
+            <text>记得</text>
+          </view>
+        </view>
+        <view class="next-btn" hover-class="s-hover" bindtap="next" data-id='{{id}}'>
+          <text>下一个</text>
+        </view>
+      </view>
+    </swiper-item>
+  </swiper>
+</view>

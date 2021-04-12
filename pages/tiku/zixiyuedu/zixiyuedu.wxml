@@ -1,0 +1,107 @@
+<swiper class="container">
+  <swiper-item wx:for="{{list}}" wx:for-key="list{{index}}">
+    <scroll-view scroll-y="true" class="viewcontainer" enable-flex id="{{index}}" bindscroll="scroll">
+      <view class="swiper-top">
+        <view class="progress">
+          <progress percent="{{((index+1)/list.length)*100}}" activeColor="#46cad3" backgroundColor="#ececec" border-radius="10rpx" stroke-width="24rpx"></progress>
+        </view>
+        <view class="progress_num">
+          <text style="font-size:30rpx;font-weight:bold;color:#46cad3;">{{index+1}}</text>
+          <text style="font-size:26rpx;">/{{list.length}}</text>
+        </view>
+      </view>
+      <view class="body">
+        <view class="timu">
+          <text style="font-weight:bold">题目：{{list[index].date}}</text>
+          <text>
+      {{list[index].wenzhang}}
+
+      请回答：
+    </text>
+        </view>
+        <view class="xuanxiang">
+          <radio-group class="radio-group" bindchange="radioChange" data-id="0" id="{{list[index]._id}}">
+            <text>{{list[index].Q1}}</text>
+            <radio style="background:{{list[index].answer[0]=='A'&&myanswer.length==5?'#79b5aa':'none'}}" wx:key="name" value="A" disabled="{{choosed}}" checked="{{'A'==myanswer[0]?true:false}}">
+              <text>{{list[index].Q1_S1}}</text>
+            </radio>
+            <radio style="background:{{list[index].answer[0]=='B'&&myanswer.length==5?'#79b5aa':'none'}}" wx:key="name" value="B" disabled="{{choosed}}" checked="{{'B'==myanswer[0]?true:false}}">
+              <text>{{list[index].Q1_S2}}</text>
+            </radio>
+            <radio style="background:{{list[index].answer[0]=='C'&&myanswer.length==5?'#79b5aa':'none'}}" wx:key="name" value="C" disabled="{{choosed}}" checked="{{'C'==myanswer[0]?true:false}}">
+              <text>{{list[index].Q1_S3}}</text>
+            </radio>
+            <radio style="background:{{list[index].answer[0]=='D'&&myanswer.length==5?'#79b5aa':'none'}}" wx:key="name" value="D" disabled="{{choosed}}" checked="{{'D'==myanswer[0]?true:false}}">
+              <text>{{list[index].Q1_S4}}</text>
+            </radio>
+          </radio-group>
+          <radio-group class="radio-group" bindchange="radioChange" data-id="1" id="{{list[index]._id}}">
+            <text>{{list[index].Q2}}</text>
+            <radio style="background:{{list[index].answer[1]=='A'&&myanswer.length==5?'#79b5aa':'none'}}" wx:key="name" value="A" disabled="{{choosed}}" checked="{{'A'==myanswer[1]?true:false}}">
+              <text>{{list[index].Q2_S1}}</text>
+            </radio>
+            <radio style="background:{{list[index].answer[1]=='B'&&myanswer.length==5?'#79b5aa':'none'}}" wx:key="name" value="B" disabled="{{choosed}}" checked="{{'B'==myanswer[1]?true:false}}">
+              <text>{{list[index].Q2_S2}}</text>
+            </radio>
+            <radio style="background:{{list[index].answer[1]=='C'&&myanswer.length==5?'#79b5aa':'none'}}" wx:key="name" value="C" disabled="{{choosed}}" checked="{{'C'==myanswer[1]?true:false}}">
+              <text>{{list[index].Q2_S3}}</text>
+            </radio>
+            <radio style="background:{{list[index].answer[1]=='D'&&myanswer.length==5?'#79b5aa':'none'}}" wx:key="name" value="D" disabled="{{choosed}}" checked="{{'D'==myanswer[1]?true:false}}">
+              <text>{{list[index].Q2_S4}}</text>
+            </radio>
+          </radio-group>
+          <radio-group class="radio-group" bindchange="radioChange" data-id="2" id="{{list[index]._id}}">
+            <text>{{list[index].Q3}}</text>
+            <radio style="background:{{list[index].answer[2]=='A'&&myanswer.length==5?'#79b5aa':'none'}}" wx:key="name" value="A" disabled="{{choosed}}" checked="{{'A'==myanswer[2]?true:false}}">
+              <text>{{list[index].Q3_S1}}</text>
+            </radio>
+            <radio style="background:{{list[index].answer[2]=='B'&&myanswer.length==5?'#79b5aa':'none'}}" wx:key="name" value="B" disabled="{{choosed}}" checked="{{'B'==myanswer[2]?true:false}}">
+              <text>{{list[index].Q3_S2}}</text>
+            </radio>
+            <radio style="background:{{list[index].answer[2]=='C'&&myanswer.length==5?'#79b5aa':'none'}}" wx:key="name" value="C" disabled="{{choosed}}" checked="{{'C'==myanswer[2]?true:false}}">
+              <text>{{list[index].Q3_S3}}</text>
+            </radio>
+            <radio style="background:{{list[index].answer[2]=='D'&&myanswer.length==5?'#79b5aa':'none'}}" wx:key="name" value="D" disabled="{{choosed}}" checked="{{'D'==myanswer[2]?true:false}}">
+              <text>{{list[index].Q3_S4}}</text>
+            </radio>
+          </radio-group>
+          <radio-group class="radio-group" bindchange="radioChange" data-id="3" id="{{list[index]._id}}">
+            <text>{{list[index].Q4}}</text>
+            <radio style="background:{{list[index].answer[3]=='A'&&myanswer.length==5?'#79b5aa':'none'}}" wx:key="name" value="A" disabled="{{choosed}}" checked="{{'A'==myanswer[3]?true:false}}">
+              <text>{{list[index].Q4_S1}}</text>
+            </radio>
+            <radio style="background:{{list[index].answer[3]=='B'&&myanswer.length==5?'#79b5aa':'none'}}" wx:key="name" value="B" disabled="{{choosed}}" checked="{{'B'==myanswer[3]?true:false}}">
+              <text>{{list[index].Q4_S2}}</text>
+            </radio>
+            <radio style="background:{{list[index].answer[3]=='C'&&myanswer.length==5?'#79b5aa':'none'}}" wx:key="name" value="C" disabled="{{choosed}}" checked="{{'C'==myanswer[3]?true:false}}">
+              <text>{{list[index].Q4_S3}}</text>
+            </radio>
+            <radio style="background:{{list[index].answer[3]=='D'&&myanswer.length==5?'#79b5aa':'none'}}" wx:key="name" value="D" disabled="{{choosed}}" checked="{{'D'==myanswer[3]?true:false}}">
+              <text>{{list[index].Q4_S4}}</text>
+            </radio>
+          </radio-group>
+          <radio-group class="radio-group" bindchange="radioChange" data-id="3" id="{{list[index]._id}}">
+            <text>{{list[index].Q5}}</text>
+            <radio style="background:{{list[index].answer[4]=='A'&&myanswer.length==5?'#79b5aa':'none'}}" wx:key="name" value="A" disabled="{{choosed}}" checked="{{'A'==myanswer[4]?true:false}}">
+              <text>{{list[index].Q5_S1}}</text>
+            </radio>
+            <radio style="background:{{list[index].answer[4]=='B'&&myanswer.length==5?'#79b5aa':'none'}}" wx:key="name" value="B" disabled="{{choosed}}" checked="{{'B'==myanswer[4]?true:false}}">
+              <text>{{list[index].Q5_S2}}</text>
+            </radio>
+            <radio style="background:{{list[index].answer[4]=='C'&&myanswer.length==5?'#79b5aa':'none'}}" wx:key="name" value="C" disabled="{{choosed}}" checked="{{'C'==myanswer[4]?true:false}}">
+              <text>{{list[index].Q5_S3}}</text>
+            </radio>
+            <radio style="background:{{list[index].answer[4]=='D'&&myanswer.length==5?'#79b5aa':'none'}}" wx:key="name" value="D" disabled="{{choosed}}" checked="{{'D'==myanswer[4]?true:false}}">
+              <text>{{list[index].Q5_S4}}</text>
+            </radio>
+          </radio-group>
+        </view>
+
+        <view class="daan" wx:if="{{choosed}}">
+          <text>参考答案：</text>
+          <text>{{list[index].answer}}</text>
+        </view>
+      </view>
+    </scroll-view>
+  </swiper-item>
+</swiper>

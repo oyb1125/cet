@@ -1,0 +1,118 @@
+{
+  "description": "项目配置文件",
+  "cloudfunctionRoot": "cloud/",
+  "packOptions": {
+    "ignore": []
+  },
+  "setting": {
+    "urlCheck": false,
+    "es6": true,
+    "postcss": true,
+    "minified": true,
+    "newFeature": true,
+    "coverView": true,
+    "autoAudits": false,
+    "showShadowRootInWxmlPanel": true,
+    "scopeDataCheck": false,
+    "checkInvalidKey": true,
+    "checkSiteMap": true,
+    "uploadWithSourceMap": true,
+    "babelSetting": {
+      "ignore": [],
+      "disablePlugins": [],
+      "outputPath": ""
+    },
+    "useMultiFrameRuntime": true,
+    "bundle": false,
+    "useApiHook": true,
+    "useApiHostProcess": false
+  },
+  "compileType": "miniprogram",
+  "libVersion": "2.10.4",
+  "appid": "wx2f389427f1eac75e",
+  "projectname": "CET%E4%B8%8A%E5%88%86%E5%8A%A9%E6%89%8B",
+  "debugOptions": {
+    "hidedInDevtools": []
+  },
+  "isGameTourist": false,
+  "simulatorType": "wechat",
+  "simulatorPluginLibVersion": {},
+  "condition": {
+    "search": {
+      "list": []
+    },
+    "conversation": {
+      "list": []
+    },
+    "plugin": {
+      "list": []
+    },
+    "game": {
+      "currentL": -1,
+      "list": []
+    },
+    "gamePlugin": {
+      "list": []
+    },
+    "miniprogram": {
+      "list": [
+        {
+          "id": -1,
+          "name": "pages/index/index",
+          "pathName": "pages/index/index",
+          "query": "",
+          "scene": null
+        },
+        {
+          "id": -1,
+          "name": "pages/wo/wo",
+          "pathName": "pages/wo/wo",
+          "query": "",
+          "scene": null
+        },
+        {
+          "id": -1,
+          "name": "pages/tiku/tiku",
+          "pathName": "pages/tiku/tiku",
+          "query": "",
+          "scene": null
+        },
+        {
+          "id": -1,
+          "name": "pages/wo/help/help",
+          "pathName": "pages/wo/help/help",
+          "query": "",
+          "scene": null
+        },
+        {
+          "id": -1,
+          "name": "pages/tiku/changpianyuedu/changpianyuedu",
+          "pathName": "pages/tiku/changpianyuedu/changpianyuedu",
+          "query": "type=CET4",
+          "scene": null
+        },
+        {
+          "id": -1,
+          "name": "pages/chafen/chafen",
+          "pathName": "pages/chafen/chafen",
+          "query": "",
+          "scene": null
+        },
+        {
+          "id": 6,
+          "name": "pages/tiku/tingli/tingli",
+          "pathName": "pages/tiku/tingli/tingli",
+          "query": "type=CET6",
+          "scene": null
+        },
+        {
+          "id": -1,
+          "name": "pages/tiku/zhenti_opt/zhenti_opt",
+          "pathName": "pages/tiku/zhenti_opt/zhenti_opt",
+          "query": "type=CET4",
+          "scene": null
+        }
+      ]
+    }
+  }
+}

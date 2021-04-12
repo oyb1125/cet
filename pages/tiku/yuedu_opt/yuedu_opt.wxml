@@ -1,0 +1,11 @@
+<view class="contianer">
+  <view class="item" hover-class="yuedu_opt-class" bindtap="xuancitiankong">
+    <image src="/images/tiku/xuancitiankong.png"></image>
+  </view>
+  <view class="item" hover-class="yuedu_opt-class" bindtap="changpianyuedu">
+    <image src="/images/tiku/changpianyuedu.png"></image>
+  </view>
+  <view class="item" hover-class="yuedu_opt-class" bindtap="zixiyuedu">
+    <image src="/images/tiku/zixiyuedu.png"></image>
+  </view>
+</view>

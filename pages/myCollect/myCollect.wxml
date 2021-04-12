@@ -1,0 +1,19 @@
+<view class="container">
+  <view class="box" wx:for="{{wordList}}" >
+    <view class="item"  bindtap="search" data-word="{{item}}">
+      <view class="cle">
+        <text>{{item}}</text>
+      </view>
+      <view class="collect" catchtap="collect"  data-items="{{item}}"><image src="/images/collected.png"></image></view>
+      </view>
+    <view wx:if="{{word==item}}">
+      <view class="audio" bindtap='playAudio'>
+        <image src="/images/index/yinpin.png" class="sound" mode="widthFix" />
+        <view class="word-pct"> /{{pronun}}/ </view>
+      </view>
+      <view wx:for="{{explainArray}}">
+        <text>{{item}}</text>
+      </view>
+    </view>
+  </view>
+</view>

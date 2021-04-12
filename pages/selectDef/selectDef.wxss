@@ -1,0 +1,80 @@
+.container{
+  height: 100vh;
+}
+.word-swiper{
+  height: 100vh;
+}
+.word-detail{
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  justify-content: center;
+  background-color: #f9f9f9
+}
+.kapian{
+  display: flex;
+  flex-direction: column;
+  width: 85%;
+  height: 500rpx;
+  border-radius: 20rpx;
+  background-color: #ffffff;
+  box-shadow:0rpx 4rpx 8rpx 4rpx #DDDDDD;
+  margin: 40rpx auto
+}
+.top{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 100rpx;
+}
+.word text{
+  width: 100%;
+  margin-top: 30rpx;
+  font-size: 70rpx;
+  text-align: center;
+  color: #000;
+  font-family: Chalkboard;
+  font-weight: 800;
+}
+.sound{
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+.sound image{
+  width: 45rpx;
+}
+.sound text{
+  margin-left: 9rpx;
+  font-family: Chalkboard;
+  font-size: 36rpx;
+  color: #8F8F8F;
+}
+.selection{
+  height: 50%;
+}
+.select{
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  margin-bottom:35rpx; 
+  margin-top:35rpx; 
+  width: 100%;
+}
+.select .btn{
+  box-shadow:0rpx 4rpx 8rpx 4rpx #DDDDDD;
+  background: #00aebb;
+  color: #ffffff;
+  height: 100rpx;
+  width:600rpx;
+  border-radius: 45rpx;
+  display: inline-block;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  line-height: 70rpx;
+}
+.tip{
+  margin-top: 40rpx;
+  font-size: 80rpx;
+}

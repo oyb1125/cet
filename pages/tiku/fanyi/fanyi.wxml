@@ -1,0 +1,38 @@
+<swiper class="container">
+<swiper-item wx:for="{{list}}" wx:for-key="list{{index}}">
+<scroll-view enable-flex scroll-y="true" class="viewcontainer" bindtouchmove="touchmove">
+  <view class="swiper-top">
+    <view class="progress">
+      <progress percent="{{((index+1)/list.length)*100}}" activeColor="#46cad3" backgroundColor="#ececec" border-radius="10rpx" stroke-width="24rpx"></progress>
+    </view>
+    <view class="progress_num">
+      <text style="font-size:30rpx;font-weight:bold;color:#46cad3;">{{index+1}}</text>
+      <text style="font-size:26rpx;">/{{list.length}}</text>
+    </view>
+    </view>
+  <view class="body">
+    <view class="timu">
+      <text style="font-weight:bold" id="{{list[index].date}}">题目：({{list[index].date}}) </text>
+      <text>{{list[index].timu}}</text>
+    </view>
+    <view class="photo" wx:for="{{imgData}}">
+      <image src="{{item.fileCloudPath}}" mode="widthFix" style="width:100%"></image>
+    </view>
+    <image src="/images/tiku/upload_answer.png" mode="widthFix" bindtap="uploadPhoto" style="width:110rpx;height:100rpx;margin-top:20rpx"></image>
+    <!-- <text style="text-align:center;font-size:30rpx">
+    (请读者纸上作答并自行参考答案)
+    </text> -->
+    <view class="daan"  wx:if="{{choosed}}" bindtap="daanchange">
+      <image src="/images/tiku/fold.png"></image>
+    </view>
+    <view class="daan"  wx:else bindtap="daanchange">
+      <image src="/images/tiku/unfold.png"></image>
+    </view>
+    <view wx:if="{{choosed}}" style="margin-bottom:40rpx">
+      <text style="font-weight:bold">参考答案：</text>
+      <text>{{list[index].cankaodaan}}</text>
+    </view>
+  </view>
+</scroll-view>
+</swiper-item>
+</swiper>

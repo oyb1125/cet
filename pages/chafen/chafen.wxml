@@ -1,0 +1,43 @@
+<!-- <view class="container">
+  <web-view src="https://www.chsi.com.cn/cet/"></web-view>
+</view> -->
+<view class="container">
+  <view class="body">
+    <view class="input">
+      <text space="ensp">准考证号: </text>
+      <input type="number" placeholder="请输入15位的笔试或口试准考证号" bindblur="ID"></input>
+    </view>
+    <view class="input">
+      <text space="ensp">    姓名: </text>
+      <input type="text" placeholder="姓名超过3个字，可只输入前3个" bindblur="name"></input>
+    </view>
+    <view class="yzm">
+      <text>  验证码: </text>
+      <input type="text" placeholder="点击输入验证码" bindblur="CAPT"></input>
+    </view>
+    <view class="yanzhengma">
+      <image src="{{url}}" mode="widthFix" bindtap="getYanzhengma" ></image>
+    </view>
+    <view bindtap="submit">
+      <image src="/images/tijiao.png"></image>
+    </view>
+    <view wx:if="{{result}}"> 
+      <view class="fenshu">
+        <text>你的成绩为：</text>
+        <text style="font-weight:bold;font-size:50rpx">{{socre}}</text>
+      </view>
+      <view class="fenshu">
+        <text>听力：</text>
+        <text style="font-weight:bold;font-size:50rpx">{{listen}}</text>
+      </view>
+      <view class="fenshu">
+        <text>阅读：</text>
+        <text style="font-weight:bold;font-size:50rpx">{{read}}</text>
+      </view>
+      <view class="fenshu">
+        <text>写作和翻译：</text>
+        <text style="font-weight:bold;font-size:50rpx">{{write}}</text>
+      </view>
+    </view>
+  </view>
+</view>

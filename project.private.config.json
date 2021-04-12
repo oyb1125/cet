@@ -1,0 +1,85 @@
+{
+  "setting": {},
+  "condition": {
+    "plugin": {
+      "list": []
+    },
+    "game": {
+      "list": []
+    },
+    "gamePlugin": {
+      "list": []
+    },
+    "miniprogram": {
+      "list": [
+        {
+          "id": -1,
+          "name": "pages/index/index",
+          "pathName": "pages/index/index",
+          "query": "",
+          "scene": null
+        },
+        {
+          "name": "pages/wo/wo",
+          "pathName": "pages/wo/wo",
+          "query": "",
+          "scene": null
+        },
+        {
+          "id": -1,
+          "name": "pages/tiku/tiku",
+          "pathName": "pages/tiku/tiku",
+          "query": "",
+          "scene": null
+        },
+        {
+          "id": -1,
+          "name": "pages/wo/help/help",
+          "pathName": "pages/wo/help/help",
+          "query": "",
+          "scene": null
+        },
+        {
+          "id": -1,
+          "name": "pages/tiku/changpianyuedu/changpianyuedu",
+          "pathName": "pages/tiku/changpianyuedu/changpianyuedu",
+          "query": "type=CET4",
+          "scene": null
+        },
+        {
+          "id": -1,
+          "name": "pages/chafen/chafen",
+          "pathName": "pages/chafen/chafen",
+          "query": "",
+          "scene": null
+        },
+        {
+          "id": 6,
+          "name": "pages/tiku/tingli/tingli",
+          "pathName": "pages/tiku/tingli/tingli",
+          "query": "type=CET6",
+          "scene": null
+        },
+        {
+          "id": -1,
+          "name": "pages/tiku/zhenti_opt/zhenti_opt",
+          "pathName": "pages/tiku/zhenti_opt/zhenti_opt",
+          "query": "type=CET4",
+          "scene": null
+        },
+        {
+          "name": "pages/tiku/fanyi/fanyi",
+          "pathName": "pages/tiku/fanyi/fanyi",
+          "query": "type=CET4",
+          "scene": null
+        },
+        {
+          "name": "pages/admin/sendMsg/sendMsg",
+          "pathName": "pages/admin/sendMsg/sendMsg",
+          "query": "",
+          "scene": null
+        }
+      ]
+    }
+  }
+}

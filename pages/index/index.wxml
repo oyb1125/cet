@@ -1,0 +1,61 @@
+<view class="container">
+  <view class="search">
+    <navigator url="/pages/index/search/search">🔍 查词</navigator>
+  </view>
+  <view class="renwu">
+    <view class="jihua">
+      <view class="jihua_left">
+        <image src="/images/index/rili.png" bindtap="getrili"></image>
+        <text style="font-size:22rpx;color:#46cad3">日历</text>
+        <image src="/images/index/rank.png" bindtap="getrank"></image>
+        <text style="font-size:22rpx;color:#46cad3">排行榜</text>
+      </view>
+      <view class="jinridanci">
+        <text style="font-weight:bold;font-size:60rpx">{{today_word}}</text>
+        <text>今日单词</text>
+      </view>
+      <view class="jihua_right">
+        <picker mode="multiSelector" bindchange="bindMultiPickerChange" range="{{multiArray}}" value="{{value}}">
+          <view class="tiaozhengjihua" hover-class="tiaozhengjihua-hover" animation='{{animation}}'>
+            <image src="/images/index/tiaozhengjihua.png"></image>
+          </view>
+        </picker>
+        <view class="shengyutianshu">
+          <text>{{finish_days}}</text>
+          <text style="font-size:22rpx">剩余天数</text>
+        </view>
+      </view>
+    </view>
+    <view class="renwu_bot">
+      <view class="jindu">
+        <progress percent="{{percentage}}" activeColor="#46cad3" backgroundColor="#ececec" border-radius="10rpx" stroke-width="24rpx"></progress>
+        <view style="display: flex;flex-direction: row;">
+          <text style="font-size:26rpx;flex-grow:1">学习进度</text>
+          <text style="font-size:30rpx;font-weight:bold;color:#46cad3;">{{studied}}</text>
+          <text style="font-size:26rpx;">/{{total}}</text>
+        </view>
+      </view>
+      <view class="star">
+        <view class="star_btn" hover-class="star_btn-hover" bindtap="kaishixuexi">
+          <!-- <image src="/images/index/kaishixuexi.png"></image> -->
+          开始学习
+        </view>
+      </view>
+    </view>
+  </view>
+  <text style="font-weight:bold;padding-top:80rpx">专项训练</text>
+  <view class="fenlei">
+    <view class="option" hover-class="option-hover" bindtap="selectDef">
+      <image src="/images/index/yingwenxuanyi.png" mode="widthFix"></image>
+    </view>
+    <view class="option" hover-class="option-hover" bindtap="zhongwenxuanci">
+      <image src="/images/index/zhongwenxuanci.png"></image>
+    </view>
+    <view class="option" hover-class="option-hover" bindtap="tingyinbianyi">
+      <image src="/images/index/tingyinbianyi.png"></image>
+    </view>
+    <view class="option" hover-class="option-hover" bindtap="kuaisufuxi">
+      <image src="/images/index/kuaisufuxi.png"></image>
+    </view>
+  </view>
+</view>
